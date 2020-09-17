@@ -1,0 +1,106 @@
+/**index.wxss**/
+page {
+  background-image: linear-gradient(skyblue, #fff 60%);
+}
+
+.location image {
+  width:50rpx;
+  height:50rpx;
+  margin-right: 30rpx;
+}
+
+.weather image {
+  width: 60rpx;
+  height: 50rpx;
+}
+
+.location {
+  display: flex;
+  /* 弹性盒水平居中 */
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 50rpx;
+}
+
+.temperature {
+  display: flex;
+  justify-content: center;
+  font-size: 150rpx;
+  font-weight: 100;
+  color: #222;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.info > view {
+  margin: 30rpx;
+}
+
+.info .air {
+  padding: 5rpx 15rpx;
+  border-radius: 10rpx;
+  font-weight: bolder;
+  color: white
+}
+
+.other {
+  display: flex;
+  justify-content: center;
+}
+
+.other > text {
+  margin: 20rpx;
+  font-size: 30rpx;
+  color: #444;
+}
+
+.future {
+  height: 150rpx;
+  margin-top: 350rpx;
+  background-color: #e7f7ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.vertical-line {
+  height: 100%;
+  border: 1rpx solid #aaa;
+}
+
+.future .day {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 20rpx;
+}
+
+.day > view {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx 0;
+}
+
+.green {
+  background-color: #07a94f ;
+}
+
+.yellow {
+  background-color: #ffca28 ;
+}
+
+.red {
+  background-color: red ;
+}
+
+.purple {
+  background-color: purple ;
+}

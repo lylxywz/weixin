@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="location" bindtap="handle">
+  <image src="/img/loca.png"></image>
+{{ip}}
+</view>
+
+<view class="temperature">{{realtime.temperature}}℃</view>
+
+<view class="info">
+<!-- realtime.info天气状况 -->
+  <view class="weather">{{realtime.info}}</view>
+  <text>|</text>
+  <!-- realtime.aqi空气质量指数  realtime.airRate空气值质量等级-->
+  <view class="air {{realtime.airColor}}">{{realtime.aqi}} {{realtime.airRate}}</view>
+</view>
+
+<view class="other">
+  <text>风力 {{realtime.power}}</text>
+  <text>风向 {{realtime.direct}}</text>
+  <text>湿度 {{realtime.humidity}}%</text>
+</view>
+
+<view class="future">
+  <view class="day">
+    <view class="temp">
+      <view class="textbox">
+        <text>今天</text>
+      </view>
+      <view>{{today.temperature}}</view>
+    </view>
+    <view class="weather">
+      <text>{{today.weather}}</text>
+      <image src="/img/weather/{{today.icon}}.png"></image>
+    </view>
+  </view>
+  <view class="vertical-line"></view>
+  <view class="day">
+    <view class="temp">
+      <view class="textbox">
+        <text>明天</text>
+      </view>
+      <view>{{tomorrow.temperature}}</view>
+    </view>
+    <view class="weather">
+      <text>{{tomorrow.weather}}</text>
+      <image src="/img/weather/{{tomorrow.icon}}.png"></image>
+    </view>
+  </view>
+</view>
+
